@@ -1,0 +1,30 @@
+**formatação de casa decimal**
+
+print(f'*frase* {*variavel*:.*numero_de_casa*f}')
+ou
+print('Media: %.1f' %MEDIA)
+
+exemplo
+print(f'sua nota foi {nota:.1f}')
+>>sua nota foi 10.0
+
+**entrada de dois ou mais valores** & **se sao multiplos**
+
+a,b = input().split()
+
+if int(b) % int(a) == 0:
+    print('Sao Multiplos')
+else:
+    print('Nao sao Multiplos')
+
+**marcação**
+
+'s' = string
+'d' = numero
+
+print ('%s comprou %d laranjas' % ('Mikael', 12))
+>>> Mikael comprou 12 laranjas
+
+print("%d^2 = %d" %(contador,(contador**2)))
+>>> numero^2 = numero ao quadrado
+>>> 2^2 = 4
